@@ -11,7 +11,7 @@
 最近从CV转行做推荐，阅读了许多用深度学习做推荐的paper，有感而发，觉得推荐领域论文的工程性大都很强，很多都是从实际的业务和数据出发，在解决业务需求的同时能产出一篇不错的paper。同时在自己学习的过程中觉得paper上读到的东西终究有限，需要自己实现一下论文方法，才能有更加深刻的理解。
 
 
-##Introduction
+## Introduction
 - 本项目旨在对自己读过的和感兴趣的深度学习推荐系统领域的文章进行复现
 - 提供**PyTorch**和**Tensorflow2.x**两种框架的实现
 - 使用**lmdb数据库**加速数据加载过程
@@ -20,15 +20,15 @@
 &nbsp;
 
 
-##Dataset
+## Dataset
 - [Criteo](./dataset/Criteo.md)
 - Ad Display/Click data on Taobao.com[TODO]
 
 &nbsp;
 
-##Some importent details
+## Some importent details
 
-###Regularization
+### Regularization
 为了减少过拟合风险，为模型添加l2正则，PyTorch和TensorFlow两者的实现略有不同
 
 * **PyTorch**:可以指定torch.nn.optim.Adam的weight_decay参数实现l2正则，如果只希望对部分参数（如weight）正则化可使用如下方式：
@@ -54,7 +54,7 @@ self.weight_dense = self.add_weight(name='weight_dense',
                                     trainable=True)
 ```
 
-###Parmater initialization
+### Parmater initialization
 参数初始化的时候我们希望输入和输出的方差相同，使用Xavier初始化方法
 
 * **PyTorch**: 先定义参数大小，再填入相应的初始化值
@@ -77,7 +77,7 @@ self.weight_dense = self.add_weight(name='weight_dense',
 
 &nbsp;
 
-##Usage example
+## Sample Usage
 以DeepFM为例，具体的步骤如下：
 
 1. 数据预处理，参见Data process
@@ -102,7 +102,7 @@ params = [
 
 &nbsp;
 
-##models
+## models
 
 |  Publish | paper |  model |
 | :----------------------------------------------------------: | :----------: | :----------------------------------------------------------: |
@@ -117,8 +117,8 @@ params = [
 &nbsp;
 
 
-##TODO
-###model
+## TODO
+### model
 |  Publish | paper |  model |
 | :----------------------------------------------------------: | :----------: | :----------------------------------------------------------: |
 | [arxiv 2019]|[Operation-aware Neural Networks for User Response Prediction](https://arxiv.org/pdf/1904.12579.pdf)|  ONN |
@@ -128,13 +128,18 @@ params = [
 | [arxiv 2020]|[DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535) |DCN V2|
 
 
-&nbsp;
+## Requirements
+* PyTorch
+* TensorFlow
+* Pandas
+* lmdb
+* 
 
 
-##Contact
+## Contact
 如果对本项目有任何疑问或者建议，请邮件**Sunrise2019@zju.edu.cn**或者添加我的微信号**13735593240**
 
-&nbsp;
+
 
 
 
