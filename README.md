@@ -17,10 +17,14 @@
 - 使用**lmdb数据库**加速数据加载过程
 - 支持单GPU和多GPU训练加速
 
+&nbsp;
+
 
 ##Dataset
 - [Criteo](./dataset/Criteo.md)
 - Ad Display/Click data on Taobao.com[TODO]
+
+&nbsp;
 
 ##Some importent details
 
@@ -71,6 +75,8 @@ self.weight_dense = self.add_weight(name='weight_dense',
                                     trainable=True)
 ```
 
+&nbsp;
+
 ##Usage example
 以DeepFM为例，具体的步骤如下：
 
@@ -94,6 +100,7 @@ params = [
 	- PyTorch```python ./train_example_pytorch.py```
 	- Tensorflow ```python ./train_example_tensorflow.py```
 
+&nbsp;
 
 ##models
 
@@ -107,6 +114,8 @@ params = [
 | KDD 2018|[xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/pdf/1803.05170.pdf) | xDeepfm |    
 | CIKM 2019|[AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks](https://arxiv.org/abs/1810.11921)| AutoInt |
 
+&nbsp;
+
 
 ##TODO
 ###model
@@ -119,11 +128,13 @@ params = [
 | [arxiv 2020]|[DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535) |DCN V2|
 
 
-
+&nbsp;
 
 
 ##Contact
 如果对本项目有任何疑问或者建议，请邮件**Sunrise2019@zju.edu.cn**或者添加我的微信号**13735593240**
+
+&nbsp;
 
 
 
