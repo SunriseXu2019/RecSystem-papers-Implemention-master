@@ -1,6 +1,6 @@
 
 
-# Recommend Paper Reproduction with PyTorch and Tensorflow 
+# Implements of Deep Learning RecSystem Model with PyTorch and tf2.x
 
 <p align="left">
   <img src='https://img.shields.io/badge/python-3.7-blue'>
@@ -20,9 +20,10 @@
 
 ##Dataset：
 - [Criteo](./dataset/Criteo.md)
-- Taobao ctr[TODO]
+- Ad Display/Click data on Taobao.com[TODO]
 
 ##Some importent details
+
 ###Regularization:
 为了减少过拟合风险，为模型添加l2正则，PyTorch和TensorFlow两者的实现略有不同
 
