@@ -1,5 +1,5 @@
 
-#Criteo Dataset
+# Criteo Dataset
 
 ## Introduction：
 Criteo是Kaggle上非常经典的[点击率预估比赛](https://www.kaggle.com/c/criteo-display-ad-challenge)，提供的数据集中训练集共4千多万行，测试集6百多万行，连续型特征共有13个，类别型特征共26个，样本按时间排序。
