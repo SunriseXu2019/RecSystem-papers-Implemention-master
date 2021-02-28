@@ -4,7 +4,7 @@
 
 <p align="left">
   <img src='https://img.shields.io/badge/python-3.7-blue'>
-  <img src='https://img.shields.io/badge/pytorch-1.14-blue'>
+  <img src='https://img.shields.io/badge/pytorch-1.5.1-blue'>
   <img src='https://img.shields.io/badge/Tensorflow-2.0-blue'>
 </p>  
 
@@ -129,11 +129,11 @@ params = [
 
 
 ## Requirements
-* PyTorch
-* TensorFlow
-* Pandas
-* lmdb
-* 
+* PyTorch1.5.1 + cuda10.1
+* TensorFlow2.0
+* Pandas1.2.1
+* lmdb1.0.0
+
 
 
 ## Contact
